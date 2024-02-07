@@ -1,46 +1,53 @@
-# Getting Started with Create React App
+# AWS SAM with React - Studies
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## 🎨 The goal
+This project aims to know what is AWS SAM with a frontend application and how to use it in a real project. The goal is to develop an UI for the [API Burguerhouse](https://github.com/diogo-dpa/burguerhouse-api-sam), created before, and to understand how to use it for local development and how to deploy it into production.
 
-## Available Scripts
+## 🕹️ The project
+This project is about building an UI for a burguer restaurant, which it would be possible to do the following features:
+- Navigate between the pages (Ingredients, Snacks and Orders, mainly)
+- List and manipulate (add, update and remove) ingredients, with their amount to represent the stock
+- List and manipulate (add, update and remove) snacks
+- List and register the user orders
 
-In the project directory, you can run:
+Besides that, to complement what was made in the API, it will be implemented the following features too:
+- List and manipulate (add, update and remove) user
+- List and manipulate (add, update and remove) menu and their ingredients and/or snacks attached to them
 
-### `npm start`
+## 🥁 Technologies used
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+* [React documentation](https://reactjs.org/)
+* [Typescript](https://www.typescriptlang.org/docs/handbook/typescript-in-5-minutes.html) : Superset of Javascript code language programming.
+* [AWS SAM](https://docs.aws.amazon.com/serverless-application-model/latest/developerguide/what-is-sam.html) : Build the project through serveless components.
+* [Styled Components](https://styled-components.com/docs/basics#installation) : Library for style guide the project.
+* [React Testing Library](https://testing-library.com/docs/react-testing-library/intro/) : Library for testing the UI.
+* [Storybook](https://storybook.js.org/docs/get-started/install/) : Library for component documentation. 
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
 
-### `npm test`
+## 💻 How to run locally
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+The Serverless Application Model Command Line Interface (SAM CLI) is an extension of the AWS CLI that adds functionality for building and testing Lambda applications. It uses Docker to run your functions in an Amazon Linux environment that matches Lambda. It can also emulate your application's build environment and API.
 
-### `npm run build`
+To use the SAM CLI, you need the following tools.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+* SAM CLI - [Install the SAM CLI](https://docs.aws.amazon.com/serverless-application-model/latest/developerguide/serverless-sam-cli-install.html)
+* Node.js - [Install Node.js 18](https://nodejs.org/en/), including the NPM package management tool.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+To build your application for the first time, run the following in your shell:
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+```bash
+# To install the dependencies
+npm install
 
-### `npm run eject`
+# To run the aplication
+npm start
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+# To run the tests
+npm test
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+```
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+## 🔜 Improvements to be made
+- Automation tests
+- Component documentation
+- Deploy in AWS with success
